@@ -1,0 +1,16 @@
+{
+  "name": "monster-subgraph",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ thlynn/monster-subgraph",
+    "create-local": "graph create --node http://localhost:8020/ thlynn/monster-subgraph",
+    "remove-local": "graph remove --node http://localhost:8020/ thlynn/monster-subgraph",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 thlynn/monster-subgraph"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.25.1",
+    "@graphprotocol/graph-ts": "0.24.1"
+  }
+}

@@ -10,6 +10,7 @@ export function handleTransfer(event: Transfer): void {
   let monster = Monster.load(event.params.tokenId.toHex())
   if(monster) {
     monster.owner = event.params.to
+    monster.save()
   }
 }
 

@@ -1,4 +1,17 @@
 type Monster @entity {
   id: ID!
   owner: Bytes! # address
+  monsterName: String
+  prefix: String
+  suffix: BigInt
+  profession: String
+  health_Point: BigInt
+  physical_damage_point: BigInt
+  magical_damage_point: BigInt
+  physical_defence: BigInt
+  magical_defence: BigInt
+  dodge: BigInt
+  hit: BigInt
+  critical: BigInt
+  parry: BigInt
 }

@@ -33,6 +33,7 @@ export function handlemonstered(event: monstered): void {
   monster.prefix = mc.prefix(tokenId)
   monster.suffix = mc.suffix(tokenId)
   monster.profession = mc.profession(mc.suffix(tokenId))
+  monster.tokenURI = mc.tokenURI(tokenId)
   
   monster.owner = event.params.owner
   monster.save()
